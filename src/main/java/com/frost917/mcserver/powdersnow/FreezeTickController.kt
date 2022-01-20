@@ -26,8 +26,8 @@ class FreezeTickController: CommandExecutor {
                 sender.freezeTicks = freezeTicks
 
             } else if(args[0] == "info") {
-                sender.sendMessage("${sender.playerProfile.name}'s freeze tick is ${sender.freezeTicks}")
-                sender.sendMessage("${sender.playerProfile.name} frozen status: ${sender.isFrozen}")
+                sender.sendMessage("${sender.player!!.name}'s freeze tick is ${sender.freezeTicks}")
+                sender.sendMessage("${sender.player!!.name} frozen status: ${sender.isFrozen}")
             } else if(args[0] == "forever") {
                 // 얼음 상태 고정
                 FrozenForever.newFrozenForever(player = sender)
@@ -50,8 +50,8 @@ class FreezeTickController: CommandExecutor {
                 anotherPlayer.freezeTicks = freezeTicks
 
             } else if(args[1] == "info") {
-                sender.sendMessage("${anotherPlayer.playerProfile.name}'s freeze tick is ${anotherPlayer.freezeTicks}")
-                sender.sendMessage("${anotherPlayer.playerProfile.name} frozen status: ${anotherPlayer.isFrozen}")
+                sender.sendMessage("${anotherPlayer.player!!.name}'s freeze tick is ${anotherPlayer.freezeTicks}")
+                sender.sendMessage("${anotherPlayer.player!!.name} frozen status: ${anotherPlayer.isFrozen}")
             } else if(args[1] == "forever") {
                 // 얼음 상태 고정
                 FrozenForever.newFrozenForever(player = anotherPlayer)
