@@ -1,0 +1,12 @@
+name: freeze-control
+version: '0.0.1'
+main: com.frost917.mcserver.powdersnow.PowderSnow
+api-version: 1.18
+commands:
+  freeze:
+    usage: "/<command> [player id] [<ticks>|info|forever|warm]\n
+    <ticks>: 원하는 틱 만큼 플레이어를 얼립니다.\n
+    info: 본인 혹은 원하는 플레이어의 빙결 상태를 볼 수 있습니다\n
+    forever: 상대방을 영원히 얼립니다.\n
+    warm: 상대방의 빙결상태를 해제, 영원히 얼어있는 경우 더 이상 얼어있지 않게 합니다.\n
+    플레이어의 이름을 넣어 해당 플레이어의 상태를 변경할 수 있습니다(op전용)"
